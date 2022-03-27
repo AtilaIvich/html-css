@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    <h1>Imagens Flexíveis</h1>
+    <p>Aqui você pode ver a imagem em diferentes tamanhos<br>
+     de acordo com a necessidade do seu dispositivo.</p>
+    
+     <picture>
+     <source media="(max-width: 750px)" srcset="paisagem-300.jpg" type="image/jpg">
+     <source media="(max-width: 950px)" srcset="paisagem-700.jpg" type="image/jpg">
+     <img src="paisagem-900.jpg" alt="Funciona?">
+    </picture>
+</body>
+</html>

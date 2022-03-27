@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face {
+    src: url('fonts/death_note2.ttf') format('truetype');
+    font-family: 'DeathNote';
+    font-weight: normal;
+}
+
+* {
+    font-family: 'DeathNote', serif
+    }
+
+body {
+    background-image: linear-gradient(to bottom, #000000, #222222);
+    height: 100%;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin: auto;
+    box-shadow: 3px 3px 20px #363636;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.color {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+div > p {
+    color: white;
+    text-align: center;
+}
+
+div {
+    margin: auto;
+    width: 13.75%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* mecânica do texto invisível */
+
+main:active {
+    background-color: black;
+}
+
+main:active > ul > li > p {
+    background-color:rgb(0, 0, 0);
+    color: black
+}
+
+main:active > ul > li > p:hover {
+    color: white;
+}
+
+/* mecânica da img invisível */
+
+div > img {
+    display: none;
+}
+
+div > p:hover ~ img {
+    display: block;
+}

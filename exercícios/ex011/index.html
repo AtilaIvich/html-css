@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="txtshadow">Imagem Dinâmica</h1>
+        <p class="txtshadow">A seguinte imagem pode adaptar seu tamanho de acordo com o <br> dispositivo ou tamanho da janela do navegador. Experimente di- <br>minuir e aumentar o zoom para observar o efeito.</p>
+        
+        <picture>
+            <source media="(max-width: 750px)" srcset="paisagem-300.jpg">
+            <source media="(max-width: 950px)" srcset="paisagem-700.jpg">
+            <img src="paisagem-900.jpg" alt="Imagem de paisagem com mar e horizonte azuis num tom suave, acompanhados de nuvens num tom azul escuro que se posicionam levemente acima do horizonte, enquanto uma grande nuvem vermelha rosada brilhante cruza o meio do céu, passando da direita ao centro inferior.">
+        </picture>
+        <h1 class="txtshadow">Reproduzindo Áudio</h1>
+        <p class="txtshadow">Aperte no play para criar um som que acompanhe a vista da paisagem.</p>
+        
+        <audio preload="metadata" controls loop>
+            <source src="Two Feet - Lies (Official Visualizer).mp3" type="audio/mpeg">
+        </audio>
+    </main>
+    <footer>
+        <span>Sobre o autor: mora no Brasil, porém pretende explorar o mundo. Se dedica para aprender inglês e começou a trilhar o caminho da programação. Passa boa parte do tempo pensando, observando e tem como passa-tempos favoritos o desenho e o entretenimento com a música.</span>
+
+        <span><ul type="none">
+            <li>Contato:</li>
+            <li><a href="#/">Facebook</a></li>
+            <li><a href="#/">Instagram</a></li>
+            <li><a href="#/">Telegram</a></li>
+            <li><a href="#/">Whatsapp</a></li>
+        </ul></span>
+    </footer>
+
+</body>
+</html>

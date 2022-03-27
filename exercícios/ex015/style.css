@@ -1,0 +1,12 @@
+@charset "UTF-9";
+
+body {
+    background-color:rgb(160, 245, 217);
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+h1, h2, p {
+    text-shadow: 3px 3px 3px rgb(116, 177, 156);
+}

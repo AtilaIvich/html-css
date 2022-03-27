@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protótipo de Dropdown</title>
+        <link rel="shortcut icon" href="A16x16.ico" type="image/x-icon">
+        <style>
+            * {
+                margin: 0;
+            }
+            
+            input {
+                display: none;
+            }
+
+            label {
+                width: 320px;
+                background-color: transparent;
+                display: inline-block;
+                border-radius: 10px;
+            }
+
+            label > div {
+                padding: 20px 60px;
+                background-color: rgb(209, 209, 209);
+                width: 200px;
+                text-align: center;
+                border-radius: 10px 10px 0px 0px;
+                border-bottom: 3px solid rgb(134, 134, 134);
+                border-top: 3px solid transparent;
+                margin-top: 30px;
+                margin-left: 20px;
+            }
+
+            label > div:hover {
+                border-bottom: 0px solid transparent;
+                margin-top: 33px;
+            }
+
+            label > div:active {
+                border-bottom: 0px solid transparent;
+                margin-top: 33px;
+            }
+
+            label + div {
+                display: none;
+            }
+
+            input[type="checkbox"]:checked + label + div {
+               display: block;
+               background-color: rgb(209, 209, 209);
+               width: 200px;
+               padding: 20px 60px;
+               text-align: center;
+               margin-left: 20px;
+               box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.452);
+            }
+
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="chec">
+            <label for="chec"><div> + Aperte aqui</div></label>
+            <div>Olha aql cara pelado &#x1F602;&#x1F449;</div>
+    </body>
+</html>
