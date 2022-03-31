@@ -5,3 +5,10 @@ body {
     background-repeat: no-repeat;
     background-size: 300px 300px;
 }
+
+div {
+    /* CIRAP shorthand - size must be after position */
+    background: black url('../imagens/wallpaper002.jpg') no-repeat fixed center center/cover;
+    width: 1500px;
+    height: 10000px;
+}
