@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Simples</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(240, 240, 240);
+        }
+
+        h1, table, td, th, p {
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.336);
+            padding: 5px;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 280px;
+            border-collapse: collapse;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.377);
+        }
+
+        td {
+            border: 1.5px solid black;
+            padding: 5px;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        th {
+            border: 1.5px solid black;
+        }
+
+        p {
+            width: 70%;
+            margin: auto;
+            min-width: 280px;
+            margin-top: 20px;
+            font-family:'Courier New', Courier, monospace;
+            text-align: justify;
+            border: 1px dashed black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Criando minha primeira tabela</h1>
+    <table>
+        <tr>
+            <th>Tutorial</th>
+            <th>Curso</th>
+            <th>emVideo</th>
+        </tr>
+        <tr>
+            <td>A1</td> <td>B1</td> <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td> <td>B2</td> <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td> <td>B3</td> <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td> <td>B4</td> <td>C4</td>
+        </tr>
+    </table>
+
+    <p>Uma tabela é constituída por uma tag de <strong>&lt;table&gt;</strong>, a qual possui outras tags em seu interior.
+        Toda tag que for contida dentro de uma table, também deve estar contida dentro de uma linha de tabela,
+        representada pela tag <strong>&lt;<abbr title="table row">tr</abbr>&gt;</strong>. Dentro das linhas de tabela, podem ser
+        posicionados vários dados de tabela - tag <strong>&lt;<abbr title="table data">td</abbr>&gt;</strong>. Além disso um cabeçalho
+        de tabela - tag <strong>&lt;<abbr title="table header">th</abbr>&gt;</strong> - pode ficar no topo da tabela, dividindo os dados
+        da tabela em colunas que seguem os cabeçalhos.
+    </p>
+</body>
+</html>
