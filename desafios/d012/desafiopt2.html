@@ -33,4 +33,16 @@
                 <td colspan="4">U</td>
             </tr>
         </table>
+
+        <script>
+            var nome = window.prompt('Eae, cara. Insere o nome aí, fazendo um favor');
+            var nome2 = nome.replace(/\s/g, '-');
+            window.alert(`Agora, sr. ${nome2}, eu sei de todos os seus dados.`);
+            var nome3 = nome2.replace('-', '')
+            window.alert(`Inclusive, ${nome3.length} letras? Nome grande meo`);
+            document.write(`<div class="div">${nome.toUpperCase()}</div>`);
+            var s = window.prompt(`Agora insere um número e vamo fingir que é o seu salário`);
+            var s2 = Number(s);
+            window.alert(`${s2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} uou UwU`);
+        </script>
     </body>
